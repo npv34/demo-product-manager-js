@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<table border="1" width="400">
+<table border="1" style="width: 400px; float: left">
     <tr>
         <td>STT</td>
         <td>Name</td>
@@ -16,13 +16,34 @@
     <tbody id="list-product">
     </tbody>
 </table>
-Name:
-<input type="text" id="name">
-Price:
-<input type="text" id="price">
-Quantity:
-<input type="text" id="quantity">
-<button onclick="add()">Them</button>
-<script src="js/js.js"></script>
+<table style="float: left; border: 1px solid black; margin-left: 20px">
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td><input type="text" id="price"></td>
+    </tr>
+    <tr>
+        <td>
+            Quantity:
+        </td>
+        <td>
+            <input type="text" id="quantity">
+        </td>
+
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button id="add" onclick="add()">Add</button>
+            <button id="edit" style="display: none" onclick="editProduct()">Edit</button>
+        </td>
+    </tr>
+</table>
+
+
+<script src="js/my.js"></script>
 </body>
 </html>
